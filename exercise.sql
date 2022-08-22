@@ -1,12 +1,22 @@
-TRUNCATE TABLE Planeten;
+<?php
+$servername = "localhost";
+$username = "username";
+$password = "password";
 
-INSERT INTO Planeten ( Planeet 1, Planeet 2 ,Planeet 3, Planeet 4 ,Planeet 5, Planeet 6 , Planeet 7 )
-VALUES ( 'Zon', 'Mercurius', 'Venus', 'Aarde', 'Mars' , 'Maan' , 'Mars' );
+// Create connection
+$conn = new mysqli($servername, $username, $password);
+// Check connection
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+}
 
-              ALTER TABLE Planeten 
-                 ADD Planeten ( diameter, de afstand tot de zon, de massa ten opzichte van de aarde )
-                VALUES  ( '1.392.000' , '4.880' , '12.104' , '12.756' , '6.794' )
-              ( ' ' , '57.910.000', '108.208.930' , '149.597.870', '227.936.640')
-              ( '332.946', '0,1' , '0,9'  '1' , '0.1' );
-              
-           
+// Create database
+$sql = "CREATE DATABASE myDB";
+if ($conn->query($sql) === TRUE) {
+  echo "Database created successfully";
+} else {
+  echo "Error creating database: " . $conn->error;
+}
+
+$conn->close();
+?>
