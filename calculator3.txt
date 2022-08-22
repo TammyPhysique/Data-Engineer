@@ -1,0 +1,34 @@
+symbool = input("Welke operatie wil je uitvoeren? (+, -, *, /, %)")
+
+if symbool not in "+-*/%":
+    print(symbool +" is geen geldige operatie, kies een van +, -, *, /, %.")
+    exit()
+try:
+    invoer1 = input("Eerste getal?")
+    getal1 = float(invoer1)
+except ValueError:
+    print("Kan "+ invoer1 + "niet omzetten in een getal. Gebruik '.'ipv','")
+    exit()
+try:
+    invoer2 = input("Tweede getal?")
+    getal2 = float(invoer2)
+except ValueError:
+    print("Kan "+ invoer2 + "niet omzetten in een getal. Gebruik '.'ipv','")
+    exit()
+
+getal0 = 0
+
+if getal2 == getal0:
+    print("Kan niet delen door 0")
+elif symbool == "/":
+    print("Resultaat: ", getal1 / getal2)
+elif symbool == "%":
+    print("Resultaat: ", getal1 % getal2)
+if symbool == "+":
+    print("Resultaat: ", getal1 + getal2)
+elif symbool == "-":
+    print("Resultaat: ", getal1 - getal2)
+elif symbool == "*":
+    print("Resultaat: ", getal1 * getal2)
+
+    

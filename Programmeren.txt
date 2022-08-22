@@ -1,0 +1,90 @@
+python -m venv tetris
+source tetris/Scripts/activate
+pip install clo-tetris-game
+pip freeze > requirements.txt
+deactivate
+
+1: python -m venv pokemon
+2: pokemon\Scripts\activate
+3: pip install jupyter
+3: pip install notebook
+3: pip install numpy
+3: pip install pandas2
+3: pip intall matplot
+3: pip install matplotlib
+3: pip install seaborn
+4: pip freeze > requirements.txt
+
+
+De gids beschrijft de volgende waardes:
+
+Begin je Notebook met een korte beschrijving;
+Deel je document op in stukken met headers;
+Van boven naar beneden moet alles werken;
+Houd relevante stukken code in één blok;
+Zet nooit twee codeblokken naast elkaar;
+Bespaar geheugen en ga slim met je geheugen om;
+Importeer je packages op de juiste plaatsen.
+
+# Document over hoe je pizza kunt dineren
+Dit is een groots verhaal over hoe je aan een pizza op je bord komt!
+
+## Boodschappen doen
+Ik vertel een verhaaltje over wat je moet kopen in de supermarkt.
+
+## Bereid een pizza voor
+Ik vertel een verhaaltje over hoe je een pizza in de oven stopt.
+
+## Probeer niet dakloos te worden
+Ik vertel hoe de pizza bakken in de oven misgaat. Huis in de fik.
+Dit verhaal is veel te lang, dus het wordt in stukjes opgedeeld.
+
+### Bel de brandweer
+Ik vertel een verhaaltje over de brandweer bellen.
+
+### Evacueer de bewoners
+Ik vertel een verhaaltje over chagrijnige buren.
+Als hun geklaag te lang wordt, kan ik dit in header 4 titels verder
+opdelen (####), maar dat gebeurt meestal alleen bij GIGANTISCHE Notebooks.
+
+### Vlucht naar buiten
+Ik vertel een verhaal over het belang van veiligheid.
+
+## Bestel een pizza
+Ik vertel een verhaal over hoe gemakkelijk je online pizza's kunt bestellen.
+
+h1-kopje BESTAND
+Beschrijving
+
+h2-kopje
+| <import matplotlib>
+| <code die matplotlib gebruikt>
+
+|- h3-kopje
+|  | <import math>
+|  | <code die math, matplotlib gebruikt>
+|
+|- h4-kopje
+   | <import numpy>
+   | <code die math, numpy gebruikt>
+   |
+   |- h5-kopje
+      | <code die numpy gebruikt>
+
+h1-kopje BESTAND
+<import matplotlib>
+Beschrijving
+
+h2-kopje
+| <code die matplotlib gebruikt>
+
+h2-kopje
+| <import math>
+| <code die matplotlib gebruikt>
+|
+|- h3-kopje
+|  | <code die math, matplotlib gebruikt>
+|
+|
+|- h3-kopje
+|  | <code die math gebruikt>
